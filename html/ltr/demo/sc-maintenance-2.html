@@ -4,6 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
@@ -15,52 +16,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
     
 
-    <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/extensions/toastr.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/responsive.bootstrap.min.css">
-    <!-- END: Vendor CSS-->
+   <!-- BEGIN: Vendor CSS-->
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/katex.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/monokai-sublime.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/quill.snow.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/extensions/dragula.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/extensions/toastr.min.css">
+   <!-- END: Vendor CSS-->
 
-    <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/colors.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/bordered-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/semi-dark-layout.css">
+   <!-- BEGIN: Theme CSS-->
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap-extended.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/colors.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/components.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/dark-layout.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/bordered-layout.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/semi-dark-layout.css">
 
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/charts/chart-apex.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/extensions/ext-component-toastr.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-invoice-list.css">
-    <!-- END: Page CSS-->
+   <!-- BEGIN: Page CSS-->
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/form-quill-editor.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/extensions/ext-component-toastr.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/form-validation.css">
+   <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-todo.css">
+   <!-- END: Page CSS-->
 
- <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/charts/chart-apex.css">
-    <!-- END: Page CSS-->
-
-
-
-    <!--begin::Global Stylesheets Bundle(used by all pages)-->
-    <link rel="stylesheet" type="text/css" href="../../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-
-    <!--end::Global Stylesheets Bundle-->
-
-    <link href="../../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../../../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+   <!-- BEGIN: Custom CSS-->
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+   <!-- END: Custom CSS-->
 
 
 
+   <!--begin::Global Theme Styles(used by all pages)-->
+		<link href="../../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../../assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+	
+		<!--end::Global Theme Styles-->
+		<!--begin::Layout Themes(used by all pages)-->
+		<link href="../../../assets/css/m/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="../../../assets/css/m/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="../../../assets/css/m/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
+		<link href="../../../assets/css/m/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+		<!--end::Layout Themes-->
+	
 
-    <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-    <!-- END: Custom CSS-->
+
 </head>
 <!-- END: Head-->
 
@@ -288,131 +292,18 @@
                 <!-- User Card & Plan Starts -->
                     <div class="row">
                         <!-- User Card starts-->
-                        <div class="col-xl-12">
-                            <div class="card user-card">
-
-                                 <div class="card-header border-0 pt-5">
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bolder fs-3 mb-1">Component Info</span>
-                                                    
-                                                </h3>
-                                </div>
-                            
-
-
-
-                                <div class="card-body">
-                                    <div class="row">
-
-
-
-
-
-
-
-                                        <div class="col-xl-3">
-                                            <div class="user-info-wrapper">
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="user-info-title">
-                                                        
-                                                        <span class="card-text user-info-title mb-0">ID: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> 31134</p>
-                                                </div>
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="user-info-title">
-                                                        
-                                                        <span class="card-text user-info-title font-weight-bold mb-0">Location: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> Conveyor 3</p>
-                                                </div>
-                                              </div>
-                                        </div>
-
-
-                                        <div class="col-xl-3">
-                                            <div class="user-info-wrapper">
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="user-info-title">
-                                                       
-                                                        <span class="card-text user-info-title font-weight-bold mb-0">Owner: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> OTISC</p>
-                                                </div>
-                                                <div class="d-flex flex-wrap ">
-                                                    <div class="user-info-title">
-                                                        
-                                                        <span class="card-text user-info-title font-weight-bold mb-0">Manufacturer: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> OTISC</p>
-                                                </div>
-                                              </div>
-                                        </div>
-
-                                        <div class="col-xl-3">
-                                            <div class="user-info-wrapper">
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="user-info-title">
-                                                       
-                                                        <span class="card-text user-info-title font-weight-bold mb-0">Previous Maintenance: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> 18/9/2020</p>
-                                                </div>
-                                                <div class="d-flex flex-wrap ">
-                                                    <div class="user-info-title">
-                                                       
-                                                        <span class="card-text user-info-title font-weight-bold mb-0">Next Maintenance: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> 13/2/2023</p>
-                                                </div>
-                                              </div>
-                                        </div>
-
-
-                                        <div class="col-xl-3">
-                                            <div class="user-info-wrapper">
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="user-info-title">
-                                                       
-                                                        <span class="card-text user-info-title font-weight-bold mt-0">Number of Incidents: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> 13</p>
-                                                </div>
-                                                <div class="d-flex flex-wrap ">
-                                                    <div class="user-info-title">
-                                                     
-                                                        <span class="card-text user-info-title font-weight-bold mt-0">Number of Periodic Repairs: </span>
-                                                    </div>
-                                                    <p class="card-text ml-1"> 24</p>
-                                                </div>
-                                              </div>
-                                        </div>
-
-
-                                       
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <!-- /User Card Ends-->
 
                         
                     </div>
                     <!-- User Card & Plan Ends -->
-
-
-
-
-
-
-                                        <div class="row match-height">
+                    <div class="row match-height">
                         <!-- Revenue Card -->
                         <div class="col-lg-8 col-12">
                             <div class="card">
 
-                                            <div class="card-header border-0 pt-5">
+                                            <div class="card-header border-0">
 
 
                                                 <h3 class="card-title align-items-start flex-column">
@@ -420,70 +311,419 @@
                                                     <span class="text-muted fw-bold fs-7">ID: 33212</span>
                                                 </h3>
                                                 <!--begin::Toolbar-->
-                                                <div class="card-toolbar" data-kt-buttons="true">
-                                                    <a class="btn btn-sm btn-color-muted btn-active btn-active-primary active px-4 me-1" id="kt_charts_widget_4_year_btn">Year</a>
-                                                    <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4 me-1" id="kt_charts_widget_4_month_btn">Month</a>
-                                                   
+
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center mr-2">
+                                                        <span class="bullet bullet-success font-small-3 mr-50 cursor-pointer"></span>
+                                                        <span>Good</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mr-2">
+                                                        <span class="bullet bullet-warning font-small-3 mr-50 cursor-pointer "></span>
+                                                        <span>Need Replacement</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mr-2">
+                                                        <span class="bullet bullet-danger font-small-3 mr-50 cursor-pointer "></span>
+                                                        <span>Poor</span>
+                                                    </div>
+    
+    
+    
+    
                                                 </div>
+                                                
                                                 <!--end::Toolbar-->
                                             </div>
+
+                                            
                                 
 
 
 
 
-                                <div class="card-body">
+                                <div class="card-body align-item-center">
                                     
-                                    <div class="d-flex align-items-center"><img src="../../../app-assets/images/pages/component-1.png" width="600" ></div>
+                                    <div class="d-flex align-items-center"><img src="../../../app-assets/images/pages/component-2.gif" width="600" ></div>
+                                
+                                
+                                  
+                                
+                                
+                                
+                                
                                 </div>
+                                
                             </div>
                         </div>
                         <!--/ Revenue Card -->
 
-                        <!-- Sales Polygon Chart Card -->
+
+
+
+
+
+
+
                         <div class="col-lg-4 col-12">
-                            <div class="card">
-                                <div class="card-header d-flex justify-content-between align-items-start pb-1">
+                            <div class="card ">
+
+                                <div class="card-header border-0">
+
+
+                                    <h3 class="card-title align-items-start flex-column">
+                                        <span class="card-label fw-bolder fs-3 mb-1">Component Info</span>
+                                       
+                                    </h3>
+
+                                    </div>
+
+
+
+                                    <div class="card-body">
+                                       
+                                          
+                                    <div class="">
+                                        <div class="user-info-wrapper">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-info-title">
+                                                   
+                                                    <span class="card-text user-info-title font-weight-bold mb-0">ID:</span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> 33212</p>
+                                            </div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-info-title">
+                                                   
+                                                    <span class="card-text user-info-title font-weight-bold mb-0">Type:</span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> Engine</p>
+                                            </div>
+                                            <div class="d-flex flex-wrap ">
+                                                <div class="user-info-title">
+                                                    
+                                                    <span class="card-text user-info-title font-weight-bold mb-0">Location: </span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> Conveyor 3</p>
+                                            </div>
+                                          </div>
+                                    </div>
+
+
+                                    <div class="">
+                                        <div class="user-info-wrapper">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-info-title">
+                                                   
+                                                    <span class="card-text user-info-title font-weight-bold mb-0">Owner: </span>
+                                                </div>
+                                                <p class="card-text  text-muted ml-1"> OTISC</p>
+                                            </div>
+                                            <div class="d-flex flex-wrap ">
+                                                <div class="user-info-title">
+                                                    
+                                                    <span class="card-text user-info-title font-weight-bold mb-0">Manufacturer: </span>
+                                                </div>
+                                                <p class="card-text  text-muted ml-1"> OTISC</p>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="user-info-wrapper">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-info-title">
+                                                   
+                                                    <span class="card-text user-info-title font-weight-bold mb-0">Previous Maintenance: </span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> 18/9/2020</p>
+                                            </div>
+                                            <div class="d-flex flex-wrap ">
+                                                <div class="user-info-title">
+                                                   
+                                                    <span class="card-text user-info-title font-weight-bold mb-0">Next Maintenance: </span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> 13/2/2023</p>
+                                            </div>
+                                          </div>
+                                    </div>
+
+
+                                    <div class="">
+                                        <div class="user-info-wrapper">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-info-title">
+                                                   
+                                                    <span class="card-text user-info-title font-weight-bold mt-0">Number of Incidents: </span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> 13</p>
+                                            </div>
+                                            <div class="d-flex flex-wrap ">
+                                                <div class="user-info-title">
+                                                 
+                                                    <span class="card-text user-info-title font-weight-bold mt-0">Number of Periodic Repairs: </span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> 24</p>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="user-info-wrapper">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="user-info-title">
+                                                   
+                                                    <span class="card-text user-info-title font-weight-bold mt-0">Number of Downtime: </span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> 37</p>
+                                            </div>
+                                            <div class="d-flex flex-wrap ">
+                                                <div class="user-info-title">
+                                                 
+                                                    <span class="card-text user-info-title font-weight-bold mt-0">Last Maintenance By:  </span>
+                                                </div>
+                                                <p class="card-text text-muted ml-1"> Adam</p>
+                                            </div>
+                                          </div>
+                                    </div>
+
+
+
+                                    <div class="ol-xl-4 mt-3">
+                                        <div class="card shadow-none bg-transparent border-primary">
+                                            <div class="card-body">
+                                                <h2 class="card-text">27 Days </h2>
+                                                <p class="card-text">For Next Maintenance</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+                               
+                                    
+                                   
+
+
+
+
+
+
+
+
+
 
                                    
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bolder fs-3 mb-1">Health Analysis</span>
-                                                    <span class="text-muted fw-bold fs-7">Component ID: 33212</span>
-                                                </h3>
-                                                <!--begin::Toolbar-->
-                                                
-                                                <!--end::Toolbar-->
-                                           
-                                    
-
-
-
-
-                                    <i data-feather="more-vertical" class="font-medium-3 cursor-pointer"></i>
                                 </div>
-                                <div class="card-body">
-                                    <div class="img-fluid mt-5 ml-1 mr-1 d-flex"><img src="../../../app-assets/images/pages/gauge.png" width="500" ></div>
-                                </div>
-                                    </div>
-                                    
                             </div>
-                        </div>
-                        <!--/ Sales Polygon Chart Card -->
+
+
+
+                            
+
+
+
+
+
+                        
                     </div>
 
 
 
+                     <!-- Solid -->
+                     <div class="row">
 
 
 
 
-                </section>
-                <!-- Dashboard Analytics end -->
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="card bg-danger">
+                                <div class="card-header">
+                                    <div>
+                                        <h2 class="font-weight-bolder mb-0 text-white">Not Funtion</h2>
+                                        <p class="card-text text-white">1 Part</p>
+                                    </div>
+                                    <div class="avatar bg-light-primary p-50 m-0">
+                                        <div class="avatar-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu font-medium-5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="card bg-warning">
+                                <div class="card-header">
+                                    <div>
+                                        <h2 class="font-weight-bolder mb-0 text-white">Alert</h2>
+                                        <p class="card-text text-white">2 Parts</p>
+                                        
+                                    </div>
+                                    <div class="avatar bg-light-primary p-50 m-0">
+                                        <div class="avatar-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu font-medium-5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="card bg-success">
+                                <div class="card-header">
+                                    <div>
+                                        <h2 class="font-weight-bolder mb-0 text-white">Healthy</h2>
+                                        <p class="card-text text-white">5 Parts</p>
+                                    </div>
+                                    <div class="avatar bg-light-primary p-50 m-0">
+                                        <div class="avatar-content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu font-medium-5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                            </div>
+                        </div>
+                  
+
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                    
+
+                    	
+								<!--begin::Notice-->
+								
+								<!--end::Notice-->
+
+                                  <!--begin::Card-->
+										<div class="card card-custom gutter-b">
+											<div class="card-header">
+												<div class="card-title">
+													<h3 class="card-label">Health Graph</h3>
+												</div>
+											</div>
+											<div class="card-body">
+												<div id="kt_flotcharts_4" style="height: 300px;"></div>
+											</div>
+										</div>
+										<!--end::Card-->
+
+
+
+
+								<!--begin::Row-->
+								
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b">
+                                            <div class="card-header">
+                                                <h3 class="card-label">Prediction</h3>
+                                            </div>
+										
+											<div class="card-body">
+												<div id="kt_flotcharts_1" style="height: 300px;"></div>
+											</div>
+                                        </div>
+								
+										<!--end::Card-->
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b">
+											<div class="card-header">
+												<div class="card-title">
+													<h3 class="card-label">Temperature</h3>
+												</div>
+											</div>
+											<div class="card-body">
+												<div id="kt_flotcharts_2" style="height: 300px;"></div>
+											</div>
+										</div>
+										<!--end::Card-->
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b">
+											<div class="card-header">
+												<div class="card-title">
+													<h3 class="card-label">Power Usage</h3>
+												</div>
+											</div>
+											<div class="card-body">
+												<div id="kt_flotcharts_3" style="height: 300px;"></div>
+											</div>
+										</div>
+										<!--end::Card-->
+									
+										
+										
+										
+									</div>
+								
+								<!--end::Row-->
+								
+								<!--end::Row-->
+					
+
+ 
+
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+
+
+
 
             </div>
         </div>
     </div>
     <!-- END: Content-->
+
+
+</section>
+<!-- Dashboard Analytics end -->
+
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
@@ -551,37 +791,6 @@
 
 
 
-        <!--begin::Global Javascript Bundle(used by all pages)-->
-        <script src="../../../assets/plugins/global/plugins.bundle.js"></script>
-        <script src="../../../assets/js/scripts.bundle.js"></script>
-        <!--end::Global Javascript Bundle-->
-        <!--begin::Page Custom Javascript(used by this page)-->
-        <script src="../../../assets/js/custom/widgets.js"></script>
-        <script src="../../../assets/js/custom/flot.bundles.js"></script>
-        <script src="../../../assets/js/custom/flotcharts.js"></script>
-        <script src="../../../assets/js/custom/modals/create-app.js"></script>
-        <script src="../../../assets/js/custom/modals/upgrade-plan.js"></script>
-
-
-        <!--end::Page Custom Javascript-->
-        <!--end::Javascript-->
-
-
-    <!--begin::Javascript-->
-        <!--begin::Global Javascript Bundle(used by all pages)-->
-        <script src="../../../assets/plugins/global/plugins.bundle.js"></script>
-        <script src="../../../assets/js/scripts.bundle.js"></script>
-        <!--end::Global Javascript Bundle-->
-
-
-
-        <script src="../../../assets/plugins/global/plugins.bundle.js"></script>
-        <script src="../../../assets/js/scripts.bundle.js"></script>
-        <!--end::Global Javascript Bundle-->
-
-
-
-
     <!-- BEGIN: Vendor JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
@@ -601,22 +810,11 @@
     <script src="../../../app-assets/js/scripts/charts/chart-apex.js"></script>
     <!-- END: Page JS-->
 
-        <script src="../../../assets/plugins/global/plugins.bundle.js"></script>
-        <script src="../../../assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
-        <script src="../../../assets/js/scripts.bundle.js"></script>
-        <!--end::Global Theme Bundle-->
-        <!--begin::Page Vendors(used by this page)-->
-        <script src="../../../assets/plugins/custom/flot/flot.bundle.js"></script>
-        <!--end::Page Vendors-->
-        <!--begin::Page Scripts(used by this page)-->
-        <script src="../../../assets/js/pages/features/charts/flotcharts.js"></script>
-        <!--end::Page Scripts-->
 
-
-        <script src="../../../assets/plugins/global/plugins.bundle.js"></script>
-        <script src="../../../assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
-        <script src="../../../assets/js/scripts.bundle.js"></script>
-
+    <!--end::Demo Panel-->
+		<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
+		<!--begin::Global Config(global config for global JS scripts)-->
+		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1400 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#3699FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#E4E6EF", "dark": "#181C32" }, "light": { "white": "#ffffff", "primary": "#E1F0FF", "secondary": "#EBEDF3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#3F4254", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#EBEDF3", "gray-300": "#E4E6EF", "gray-400": "#D1D3E0", "gray-500": "#B5B5C3", "gray-600": "#7E8299", "gray-700": "#5E6278", "gray-800": "#3F4254", "gray-900": "#181C32" } }, "font-family": "Poppins" };</script>
 		<!--end::Global Config-->
 		<!--begin::Global Theme Bundle(used by all pages)-->
 		<script src="../../../assets/plugins/global/plugins.bundle.js"></script>
