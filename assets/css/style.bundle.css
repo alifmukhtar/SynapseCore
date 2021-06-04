@@ -4567,7 +4567,7 @@ textarea.form-control-lg {
   border-radius: 0;
 }
 
-.breadcrumb {
+/* .breadcrumb {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0;
@@ -4586,7 +4586,7 @@ textarea.form-control-lg {
 }
 .breadcrumb-item.active {
   color: #009EF7;
-}
+} */
 
 .pagination {
   display: flex;
@@ -36488,7 +36488,7 @@ a:hover {
     padding-bottom: 0.5rem;
   }
 }
-.breadcrumb {
+/* .breadcrumb {
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -36525,7 +36525,7 @@ a:hover {
 
 .breadcrumb-separatorless .breadcrumb-item:after {
   display: none;
-}
+} */
 
 .btn {
   outline: none !important;

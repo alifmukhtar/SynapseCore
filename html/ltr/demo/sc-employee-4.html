@@ -50,8 +50,7 @@
    <!--begin::Global Theme Styles(used by all pages)-->
 		<link href="../../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../../../assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="../../../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-		
+		<link href="../../../assets/m/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
 		<link href="../../../assets/css/m/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
@@ -60,24 +59,83 @@
 		<link href="../../../assets/css/m/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
 		<!--end::Layout Themes-->
 
-		<!-- font -->
+
+        <!-- font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-		<style>
-		
-        /* #myInput {
-        background-image: url('/src/Syn/searchicon.png');
-        background-position: 10px 12px;
-        background-repeat: no-repeat;
-        width: 100%;
-        font-size: 16px;
-        padding: 12px 20px 12px 40px;
-        border: 1px solid #ddd;
-        margin-bottom: 12px;
-        } */
 
+        <style>
+            .button {
+            background-color: #0F2944; /* Green */
+            border: none;
+            color: #FE9004;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            }
+
+            .buttonoutline {
+            background-color: white;
+            color: black;
+            border: 2px solid #0F2944; /* Green */
+            }
+
+            body{
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .search
+            {
+                display: block;
+                height: 2.714rem;
+                padding: 0.438rem 1rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.45;
+                color: #6e6b7b;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #d8d6de;
+                border-radius: 0.357rem;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            }
+
+            /* Assign full width inputs*/ 
+        input[type=text], 
+        input[type=password] { 
+            display: block;
+                width:100%;
+                height: 2.714rem;
+                padding: 0.438rem 1rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.45;
+                color: #6e6b7b;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #d8d6de;
+                border-radius: 0.357rem;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        } 
+          
         
-		</style>
+      
+        .fontuser {
+            position: relative;
+        }
+          
+        .fontuser a{
+            position: absolute;
+            right: 25px;
+            top: 13px;
+            color: gray;
+        }
+          
+        
+            
+        </style>
 		
 </head>
 <!-- END: Head-->
@@ -321,249 +379,290 @@
         
             <div class="d-flex justify-content-between align-items-center mx-50 row pt-0 pb-1">
                 
-                <div class="d-flex column col-md-4">
+                <!-- <div class="d-flex column col-md-4">
                     <div class="search"><input type="text" class="form-control" placeholder="What are you looking for?"></div>
                     <div class="search"><button type="submit" class="form-control">
                         <i class="fa fa-search"></i>
                      </button></div>
                     
+                </div> -->
+                <!-- <div class="input-group col-md-4 mb-2">
+                    <input class="input-field " 
+                           type="text" 
+                           placeholder="Search...">
+                    <i class="fa fa-search icon"></i>
+                </div> -->
+
+                <div class="fontuser col-lg-4 col-md-4 mb-2">
+                    <input type="text" 
+                            placeholder="Search..."
+                            name="uname" required> 
+                    <a href="javascript:void(0);" class="fa fa-search"></a>
                 </div>
-                <div class="col-md-4"><select id="UserPlan" class="form-control text-capitalize mb-md-0 mb-2"><option value=""> Select</option><option value="Basic" class="text-capitalize">Human Resource</option><option value="Company" class="text-capitalize">IT</option><option value="Enterprise" class="text-capitalize">Marketing</option><option value="Team" class="text-capitalize">Operation</option></select></div>
-                <div class="col-md-4"><select id="UserRole" class="form-control text-capitalize mb-md-0 mb-2"><option value=""> Select</option><option value="Office" class="text-capitalize">Non-Executive</option><option value="Author" class="text-capitalize">Resigned</option><option value="Editor" class="text-capitalize">Professional</option></select></div>
-                <!-- <div class="col-md-4 form-group mb-0">
-                    <input type="text" class="form-control dt-date flatpickr-range dt-input flatpickr-input active" data-column="5" placeholder="Date" data-column-index="4" name="dt_date">
-                    <input type="hidden" class="form-control dt-date start_date dt-input" data-column="5" data-column-index="4" name="value_from_start_date">
-                    <input type="hidden" class="form-control dt-date end_date dt-input" name="value_from_end_date" data-column="5" data-column-index="4">
+                
+                
+                <!-- <div class="input-group col-md-4 mb-2">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                      <span class="btn" type="button"><i class="fas fa-search"></i></span>
+                    </div>
+                </div> -->
+
+                <div class="d-flex justify-content-between col-lg-3 col-md-3 mb-2 align-items-center">
+                    <span class="text-center mr-1">Department</span>
+                    <select id="UserPlan" class="form-control text-capitalize mb-md-0">
+                        <option value=""> Select</option>
+                        <option value="Basic" class="text-capitalize">Human Resource</option>
+                        <option value="Company" class="text-capitalize">IT</option>
+                        <option value="Enterprise" class="text-capitalize">Marketing</option>
+                        <option value="Team" class="text-capitalize">Operation</option>
+                    </select>
                 </div>
-                <h3 class="card-header text-muted">24 / 05 / 2021</h3> -->
-          
+
+                <div class="d-flex justify-content-between col-lg-3 col-md-3 mb-2 align-items-center">
+                    <span class="mb-0 mr-1">Status</span>
+                    <select id="UserRole" class="form-control text-capitalize mb-md-0">
+                        <option value=""> Select</option>
+                        <option value="Office" class="text-capitalize">Non-Executive</option>
+                        <option value="Author" class="text-capitalize">Resigned</option>
+                        <option value="Editor" class="text-capitalize">Professional</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-2 mb-2">
+                    <span class="btn btn-primary" type="button"><i class="fas fa-search"></i> &nbsp; Search</span>
+                </div>
+                
             </div>
 
             <hr> 
 
             <div class="content-body">
-                <!-- Dashboard Analytics Start -->
+                <!-- Employee Grid Start -->
                 <section id="chartjs-chart">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-6" id="user">
-                                <!--begin::Card-->
-                                <div class="card card-custom gutter-b card-stretch">
-                                    <!--begin::Body-->
-                                    <div class="card-body">
-                                        
-                                        <!--begin::User-->
-                                        <div class="d-flex align-items-end mb-7">
-                                            <!--begin::Pic-->
-                                            <div class="d-flex align-items-center">
-                                                <!--begin::Pic-->
-                                                <div class="flex-shrink-0 mr-2 mt-lg-0 mt-3">
-                                                    <div class="symbol symbol-circle symbol-lg-75">
-                                                        <img src="../../../app-assets/images/avatars/7.png" alt="image" />
-                                                    </div>
-                                                    
-                                                </div>
-                                                <!--end::Pic-->
-                                                <!--begin::Title-->
-                                                <div class="d-flex flex-column">
-                                                    <h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Eleanor Aguilar</h4>
-                                                    <span class="text-muted font-weight-bold mb-0">Head of Development</span>
-                                                    <span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Title-->
-                                        </div>
-                                        <!--end::User-->
-                                        <hr>
+                	<div class="row">
 
-                                        <!--begin::Info-->
-                                        <div class="mb-7 mt-13">
-                                            <div class="d-flex justify-content-start align-items-center">
+                		    <!--begin::Col-->
+						    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-6" id="user">
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b card-stretch">
+									<!--begin::Body-->
+									<div class="card-body">
+												
+										<!--begin::User-->
+										<div class="d-flex align-items-end mb-2 col-lg-12">
+                                           
+											<!--begin::Pic-->
+											<div class="row align-items-center">
+												<!--begin::Pic-->
+												<div class="flex-shrink-0 mr-3 mt-lg-0 mt-3 mb-2">
+                                                    <div class="d-flex align-items-center"><div class="avatar mr-0">
+                                                        <img src="../../../app-assets/images/avatars/10.png" alt="Avatar" width="80" height="80"></div>
+                                                     </div>
+												</div>
+												<!--end::Pic-->
+                                                
+												<!--begin::Title-->
+												<div class="d-flex flex-column">
+													<h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Edgar Jones</h4>
+													<span class="text-muted font-weight-bold mb-0">Systems Administrator</span>
+													<span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
+												</div>
+												<!--end::Title-->
+											</div>
+											<!--end::Pic-->
+										</div>
+										<!--end::User-->
+                                        
+										<hr class="mb-2">
+
+										<!--begin::Info-->
+
+                                            <div class="col-lg-12 col-md-6 col-12 mb-2">
                                                 <span class="text-dark-75 font-weight-bolder mr-2">Email:</span>
-                                                <span class="text-muted text-hover-primary">eleanor.aguilar@gmail.com</span>
+                                                <span class="text-muted text-hover-primary">wsomerlie1l@accuweather.com</span>      
                                             </div>
-                                            <div class="d-flex justify-content-start align-items-cente my-1">
+                                            <div class="col-lg-12 col-md-6 col-12 mb-2">
                                                 <span class="text-dark-75 font-weight-bolder mr-2">Mobile:</span>
-                                                <span class="text-muted text-hover-primary">44(76)34254578</span>
+											    <span class="text-muted text-hover-primary">43(76)34254578</span>         
                                             </div>
-                                        </div>
-                                        <!--end::Info-->
                                         
-                                    </div>
-                                    <!--end::Body-->
-                                </div>
-                                <!--end::Card-->
-                            </div>
-                            <!--end::Col-->
-
-                            <!--begin::Col-->
-                            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-6" id="user">
-                                <!--begin::Card-->
-                                <div class="card card-custom gutter-b card-stretch">
-                                    <!--begin::Body-->
-                                    <div class="card-body">
-                                        
-                                        <!--begin::User-->
-                                        <div class="d-flex align-items-end mb-7">
-                                            <!--begin::Pic-->
-                                            <div class="d-flex align-items-center">
-                                                <!--begin::Pic-->
-                                                <div class="flex-shrink-0 mr-2 mt-lg-0 mt-3">
-                                                    <div class="symbol symbol-circle symbol-lg-75">
-                                                        <img src="../../../app-assets/images/avatars/7.png" alt="image" />
-                                                    </div>
-                                                    
-                                                </div>
-                                                <!--end::Pic-->
-                                                <!--begin::Title-->
-                                                <div class="d-flex flex-column">
-                                                    <h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Eleanor Aguilar</h4>
-                                                    <span class="text-muted font-weight-bold mb-0">Head of Development</span>
-                                                    <span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Title-->
-                                        </div>
-                                        <!--end::User-->
-                                        <hr>
-
-                                        <!--begin::Info-->
-                                        <div class="mb-7 mt-13">
-                                            <div class="d-flex justify-content-start align-items-center">
-                                                <span class="text-dark-75 font-weight-bolder mr-2">Email:</span>
-                                                <span class="text-muted text-hover-primary">eleanor.aguilar@gmail.com</span>
-                                            </div>
-                                            <div class="d-flex justify-content-start align-items-cente my-1">
-                                                <span class="text-dark-75 font-weight-bolder mr-2">Mobile:</span>
-                                                <span class="text-muted text-hover-primary">44(76)34254578</span>
-                                            </div>
-                                        </div>
-                                        <!--end::Info-->
-                                        
-                                    </div>
-                                    <!--end::Body-->
-                                </div>
-                                <!--end::Card-->
-                            </div>
-                            <!--end::Col-->
+										
+										<!--end::Info-->
+												
+									</div>
+								    <!--end::Body-->
+								</div>
+								<!--end::Card-->
+							</div>
+						    <!--end::Col-->
 
                             <!--begin::Col-->
-                            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-6" id="user">
-                                <!--begin::Card-->
-                                <div class="card card-custom gutter-b card-stretch">
-                                    <!--begin::Body-->
-                                    <div class="card-body">
+						    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-6" id="user">
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b card-stretch">
+									<!--begin::Body-->
+									<div class="card-body">
+												
+										<!--begin::User-->
+                                        <div class="d-flex align-items-end mb-2 col-lg-12">
+                                           
+											<!--begin::Pic-->
+											<div class="row align-items-center">
+												<!--begin::Pic-->
+												<div class="flex-shrink-0 mr-3 mt-lg-0 mt-3 mb-2">
+                                                    <div class="d-flex align-items-center"><div class="avatar mr-0">
+                                                        <img src="../../../app-assets/images/avatars/7.png" alt="Avatar" width="80" height="80"></div>
+                                                     </div>
+												</div>
+												<!--end::Pic-->
+                                                
+												<!--begin::Title-->
+												<div class="d-flex flex-column">
+													<h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Eleanor Aguilar</h4>
+													<span class="text-muted font-weight-bold mb-0">Programmer</span>
+													<span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
+												</div>
+												<!--end::Title-->
+											</div>
+											<!--end::Pic-->
+										</div>
+										<!--end::User-->
                                         
-                                        <!--begin::User-->
-                                        <div class="d-flex align-items-end mb-7">
-                                            <!--begin::Pic-->
-                                            <div class="d-flex align-items-center">
-                                                <!--begin::Pic-->
-                                                <div class="flex-shrink-0 mr-2 mt-lg-0 mt-3">
-                                                    <div class="symbol symbol-circle symbol-lg-75">
-                                                        <img src="../../../app-assets/images/avatars/7.png" alt="image" />
-                                                    </div>
-                                                    
-                                                </div>
-                                                <!--end::Pic-->
-                                                <!--begin::Title-->
-                                                <div class="d-flex flex-column">
-                                                    <h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Eleanor Aguilar</h4>
-                                                    <span class="text-muted font-weight-bold mb-0">Head of Development</span>
-                                                    <span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Title-->
-                                        </div>
-                                        <!--end::User-->
-                                        <hr>
+										<hr class="mb-2">
 
-                                        <!--begin::Info-->
-                                        <div class="mb-7 mt-13">
-                                            <div class="d-flex justify-content-start align-items-center">
-                                                <span class="text-dark-75 font-weight-bolder mr-2">Email:</span>
-                                                <span class="text-muted text-hover-primary">eleanor.aguilar@gmail.com</span>
-                                            </div>
-                                            <div class="d-flex justify-content-start align-items-cente my-1">
-                                                <span class="text-dark-75 font-weight-bolder mr-2">Mobile:</span>
-                                                <span class="text-muted text-hover-primary">44(76)34254578</span>
-                                            </div>
+										<!--begin::Info-->
+                                        <div class="col-lg-12 col-md-6 col-12 mb-2">                                          
+                                            <span class="text-dark-75 font-weight-bolder mr-2">Email:</span>
+											<span class="text-muted text-hover-primary">eleanor.aguilar@gmail.com</span>
                                         </div>
-                                        <!--end::Info-->
-                                        
-                                    </div>
-                                    <!--end::Body-->
-                                </div>
-                                <!--end::Card-->
-                            </div>
-                            <!--end::Col-->
+                                        <div class="col-lg-12 col-md-6 col-12 mb-2">                                          
+                                            <span class="text-dark-75 font-weight-bolder mr-2">Mobile:</span>
+											<span class="text-muted text-hover-primary">44(76)34254578</span>
+                                        </div>
+										<!--end::Info-->
+												
+									</div>
+								    <!--end::Body-->
+								</div>
+								<!--end::Card-->
+							</div>
+						    <!--end::Col-->
 
                             <!--begin::Col-->
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" id="user">
-                                <!--begin::Card-->
-                                <div class="card card-custom gutter-b card-stretch">
-                                    <!--begin::Body-->
-                                    <div class="card-body pt-8">
+						    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-6" id="user">
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b card-stretch">
+									<!--begin::Body-->
+									<div class="card-body">
                                         
                                         <!--begin::User-->
-                                        <div class="d-flex align-items-end mb-7">
-                                            <!--begin::Pic-->
-                                            <div class="d-flex align-items-center">
-                                                <!--begin::Pic-->
-                                                <div class="flex-shrink-0 mr-2 mt-lg-0 mt-3">
-                                                    <div class="symbol symbol-circle symbol-lg-75">
-                                                        <img src="../../../app-assets/images/avatars/7.png" alt="image" />
-                                                    </div>
-                                                    
-                                                </div>
-                                                <!--end::Pic-->
-                                                <!--begin::Title-->
-                                                <div class="d-flex flex-column">
-                                                    <h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Eleanor Aguilar</h4>
-                                                    <span class="text-muted font-weight-bold mb-0">Head of Development</span>
-                                                    <span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Title-->
-                                        </div>
-                                        <!--end::User-->
-                                        <hr>
-
-                                        <!--begin::Info-->
-                                        <div class="mb-7 mt-13">
-                                            <div class="d-flex justify-content-start align-items-center">
-                                                <span class="text-dark-75 font-weight-bolder mr-2">Email:</span>
-                                                <span class="text-muted text-hover-primary">eleanor.aguilar@gmail.com</span>
-                                            </div>
-                                            <div class="d-flex justify-content-start align-items-cente my-1">
-                                                <span class="text-dark-75 font-weight-bolder mr-2">Mobile:</span>
-                                                <span class="text-muted text-hover-primary">44(76)34254578</span>
-                                            </div>
-                                        </div>
-                                        <!--end::Info-->
+                                        <div class="d-flex align-items-end mb-2 col-lg-12">
+                                           
+											<!--begin::Pic-->
+											<div class="row align-items-center">
+												<!--begin::Pic-->
+												<div class="flex-shrink-0 mr-3 mt-lg-0 mt-3 mb-2">
+                                                    <div class="d-flex align-items-center"><div class="avatar mr-0">
+                                                        <img src="../../../app-assets/images/avatars/8.png" alt="Avatar" width="80" height="80"></div>
+                                                     </div>
+												</div>
+												<!--end::Pic-->
+                                                
+												<!--begin::Title-->
+												<div class="d-flex flex-column">
+													<h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Carlos Daniels</h4>
+													<span class="text-muted font-weight-bold mb-0">Paralegal</span>
+													<span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
+												</div>
+												<!--end::Title-->
+											</div>
+											<!--end::Pic-->
+										</div>
+										<!--end::User-->
                                         
-                                    </div>
-                                    <!--end::Body-->
-                                </div>
-                                <!--end::Card-->
-                            </div>
-                            <!--end::Col-->
+										<hr class="mb-2">
 
-                    </div>
+										<!--begin::Info-->
+                                        <div class="col-lg-12 col-md-6 col-12 mb-2">                                          
+                                            <span class="text-dark-75 font-weight-bolder mr-2">Email:</span>
+											<span class="text-muted text-hover-primary">rhucki@ed.gov</span>
+                                        </div>
+                                        <div class="col-lg-12 col-md-6 col-12 mb-2">                                          
+                                            <span class="text-dark-75 font-weight-bolder mr-2">Mobile:</span>
+											<span class="text-muted text-hover-primary">44(76)45254578</span>
+                                        </div>
+										<!--end::Info-->
+												
+									</div>
+								    <!--end::Body-->
+								</div>
+								<!--end::Card-->
+							</div>
+						    <!--end::Col-->
 
-                        <div class="card-body">
-                            <div id="firstLast1-content" class="border-grey border-lighten-2 mb-1">12 of 250 records</div>
-                            <ul class="pagination firstLast1-links"><li class="page-item first"><a href="#" class="page-link">First</a></li><li class="page-item prev"><a href="#" class="page-link">Prev</a></li><li class="page-item"><a href="#" class="page-link">1</a></li><li class="page-item active"><a href="#" class="page-link">2</a></li><li class="page-item"><a href="#" class="page-link">3</a></li><li class="page-item"><a href="#" class="page-link">4</a></li><li class="page-item"><a href="#" class="page-link">5</a></li><li class="page-item next"><a href="#" class="page-link">Next</a></li><li class="page-item last"><a href="#" class="page-link">Last</a></li></ul>
-                        </div>
-                    </div>
-                			
+                            <!--begin::Col-->
+						    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-6" id="user">
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b card-stretch">
+									<!--begin::Body-->
+									<div class="card-body">
+                                        
+                                        <!--begin::User-->
+                                        <div class="d-flex align-items-end mb-2 col-lg-12">
+                                           
+											<!--begin::Pic-->
+											<div class="row align-items-center">
+												<!--begin::Pic-->
+												<div class="flex-shrink-0 mr-3 mt-lg-0 mt-3 mb-2">
+                                                    <div class="d-flex align-items-center"><div class="avatar mr-0">
+                                                        <img src="../../../app-assets/images/avatars/4.png" alt="Avatar" width="80" height="80"></div>
+                                                     </div>
+												</div>
+												<!--end::Pic-->
+                                                
+												<!--begin::Title-->
+												<div class="d-flex flex-column">
+													<h4 class="text-dark  text-hover-primary font-weight-bolder font-size-h1 mb-1">Jason Simpson</h4>
+														<span class="text-muted font-weight-bold mb-0">Cost Accountant</span>
+														<span class="text-center" style="color: #7367F0; background-color: #e3e0fc; width:150px; border-radius: 5px;">Non-Executive</span>
+        										</div>
+												<!--end::Title-->
+											</div>
+											<!--end::Pic-->
+										</div>
+										<!--end::User-->
+
+										<hr class="mb-2">
+
+										<!--begin::Info-->
+										<div class="mb-2 mt-13">
+                                            <div class="col-lg-12 col-md-6 col-12 mb-2">                                          
+                                                <span class="text-dark-75 font-weight-bolder mr-2">Email:</span>
+												<span class="text-muted text-hover-primary">mgilogly2a@elpais.com</span>
+                                            </div>
+                                            <div class="col-lg-12 col-md-6 col-12 mb-2">                                          
+                                                <span class="text-dark-75 font-weight-bolder mr-2">Mobile:</span>
+											    <span class="text-muted text-hover-primary">44(60)34344578</span>
+                                            </div>	
+										</div>
+										<!--end::Info-->
+												
+									</div>
+								    <!--end::Body-->
+								</div>
+								<!--end::Card-->
+							</div>
+						    <!--end::Col-->
+
+					</div>   
+                    
+					<!-- <div class="card-body row justify-content-between">
+                        <div id="firstLast1-content" class="border-grey border-lighten-2 mb-1">12 of 250 records</div>
+                        <ul class="pagination firstLast1-links"><li class="page-item first"><a href="#" class="page-link">First</a></li><li class="page-item prev"><a href="#" class="page-link">Prev</a></li><li class="page-item"><a href="#" class="page-link">1</a></li><li class="page-item active"><a href="#" class="page-link">2</a></li><li class="page-item"><a href="#" class="page-link">3</a></li><li class="page-item"><a href="#" class="page-link">4</a></li><li class="page-item"><a href="#" class="page-link">5</a></li><li class="page-item next"><a href="#" class="page-link">Next</a></li><li class="page-item last"><a href="#" class="page-link">Last</a></li></ul>
+                    </div> -->
+
                 </section>
-                <!-- Dashboard Analytics end -->
+                <!-- Employee Grid end -->
 
             </div>
         </div>
@@ -577,12 +676,6 @@
 
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
-
-
-
-
-
-
 
 
 
