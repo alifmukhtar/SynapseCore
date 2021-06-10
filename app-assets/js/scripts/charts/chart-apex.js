@@ -194,11 +194,11 @@ $(function () {
       },
       series: [
         {
-          name: 'Apple',
+          name: 'Attendance',
           data: [90, 120, 55, 100, 80, 125, 175, 70, 88, 180]
         },
         {
-          name: 'Samsung',
+          name: 'Absence',
           data: [85, 100, 30, 40, 95, 90, 30, 110, 62, 20]
         }
       ],
