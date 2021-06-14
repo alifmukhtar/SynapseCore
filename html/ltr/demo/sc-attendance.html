@@ -385,47 +385,38 @@
                 </div>
                 <!--/ Stats Horizontal Card -->
 
+
+               
+
+
             </section>
             <!--/ Statistics Card section-->
 
 
-                <!-- Hoverable rows start -->
+                            <!-- Hoverable rows start -->
                 <div class="row" id="table-hover-row">
                     <div class="col-12">
-                        <div class="card">   
+                        <div class="card">
+                            
+                           
+
                             <div class="card">
                           
                                     <h5 class="card-header">Search Filter</h5>
 
                                 <div class="d-flex justify-content-between align-items-center mx-50 row pt-0 pb-1">
-
-                                    <div class="col-md-3 user_role"><select id="UserRole" class="form-control text-capitalize mb-md-0 mb-2">
-                                        <option value="">Select Staff</option>
-                                        <option value="Office" class="text-capitalize">Syafiq</option>
-                                        <option value="Author" class="text-capitalize">Hafizal</option>
-                                        <option value="Editor" class="text-capitalize">Fateha</option>
-                                    </select>
-                                    </div>
-                                    <div class="col-md-3 user_plan"><select id="UserPlan" class="form-control text-capitalize mb-md-0 mb-2"><option value=""> Select Department </option><option value="Basic" class="text-capitalize">Human Resource</option><option value="Company" class="text-capitalize">IT</option><option value="Enterprise" class="text-capitalize">Marketing</option><option value="Team" class="text-capitalize">Operation</option></select></div>
-                                    <div class="col-md-3 form-group mb-2">
+                                    
+                                    <div class="col-md-4 user_role"><select id="UserRole" class="form-control text-capitalize mb-md-0 mb-2"><option value=""> Select Work Mode</option><option value="Office" class="text-capitalize">Office</option><option value="Author" class="text-capitalize">Home</option><option value="Editor" class="text-capitalize">Client Site</option></select></div>
+                                    <div class="col-md-4 user_plan"><select id="UserPlan" class="form-control text-capitalize mb-md-0 mb-2"><option value=""> Select Department </option><option value="Basic" class="text-capitalize">Human Resource</option><option value="Company" class="text-capitalize">IT</option><option value="Enterprise" class="text-capitalize">Marketing</option><option value="Team" class="text-capitalize">Operation</option></select></div>
+                                    <div class="col-md-4 form-group mb-0">
                                         <input type="text" class="form-control dt-date flatpickr-range dt-input flatpickr-input active" data-column="5" placeholder="Date" data-column-index="4" name="dt_date">
                                         <input type="hidden" class="form-control dt-date start_date dt-input" data-column="5" data-column-index="4" name="value_from_start_date">
                                         <input type="hidden" class="form-control dt-date end_date dt-input" name="value_from_end_date" data-column="5" data-column-index="4">
                                     </div>
-                                    <div class="col-md-3 user_role"><select id="UserRole" class="form-control text-capitalize mb-md-0 mb-2"><option value=""> Select Work Mode</option><option value="Office" class="text-capitalize">Office</option><option value="Author" class="text-capitalize">Home</option><option value="Editor" class="text-capitalize">Client Site</option></select></div>
-
                                     <h3 class="card-header text-muted">24 / 05 / 2021</h3>
                             </div>
 
-                            <div class="card-body col-md-3 align-items-right">
-                                   
-
-                                <button class="btn btn-primary btn-toggle-sidebar btn-block col-md-6 justify-content-right" data-toggle="modal" data-target="#add-new-sidebar">
-                                    <span class="align-middle">Add Record</span>
-                                </button>
-                    
-                                
-                            </div>
+                          
                             <div class="table-responsive">
                                 <table class="table table-hover">
                                     <thead>
@@ -781,19 +772,13 @@
                                                         </div>
                                                         <div class="form-group position-relative">
                                                             <label for="start-date" class="form-label">Clock In</label>
-                                                            <input type="text" class="form-control" id="start-date" name="start-date" placeholder="Start Time" />
+                                                            <input type="text" class="form-control" id="start-date" name="start-date" placeholder="Start Date" />
                                                         </div>
                                                         <div class="form-group position-relative">
                                                             <label for="end-date" class="form-label">Clock Out</label>
-                                                            <input type="text" class="form-control" id="end-date" name="end-date" placeholder="End Time" />
+                                                            <input type="text" class="form-control" id="end-date" name="end-date" placeholder="End Date" />
                                                         </div>
-
-                                                        <div class="form-group position-relative">
-                                                            <label for="end-date" class="form-label">Date</label>
-                                                            <input type="text" class="form-control dt-date flatpickr-range dt-input flatpickr-input active" data-column="5" placeholder="Date" data-column-index="4" name="dt_date">
-                                                        </div>
-
-                                                                                                              
+                                                       
                                                         <div class="form-group">
                                                             <label for="event-location" class="form-label">Location (Client Site)</label>
                                                             <input type="text" class="form-control" id="event-location" placeholder="Enter Location" />
@@ -853,10 +838,34 @@
 
         </div>
 
+        <div class="card-body col-md-3 align-items-right">
+                                   
 
+            <button class="btn btn-primary btn-toggle-sidebar btn-block col-md-6 justify-content-right" data-toggle="modal" data-target="#add-new-sidebar">
+                <span class="align-middle">Add Record</span>
+            </button>
+
+            
+        </div>
     </div>
 </div>
 <!-- END: Content-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -865,7 +874,7 @@
 
     <!-- BEGIN: Footer-->
 
-    <!-- <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button> -->
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
 
 
