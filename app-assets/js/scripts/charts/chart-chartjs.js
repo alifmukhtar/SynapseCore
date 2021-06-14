@@ -599,7 +599,7 @@ $(window).on('load', function () {
         maintainAspectRatio: false,
         responsiveAnimationDuration: 500,
         legend: {
-          position: 'right',
+          position: 'bottom',
           labels: {
             usePointStyle: true,
             padding: 25,
@@ -640,10 +640,10 @@ $(window).on('load', function () {
         }
       },
       data: {
-        labels: ['Africa', 'Asia', 'Europe', 'America', 'Antarctica', 'Australia'],
+        labels: ['Sale', 'Account Dept.', 'Project Manager', 'Programmer', 'Human Resource', 'Executives'],
         datasets: [
           {
-            label: 'Population (millions)',
+            label: 'Number of Employee',
             backgroundColor: [
               primaryColorShade,
               warningColorShade,
@@ -652,8 +652,8 @@ $(window).on('load', function () {
               greyColor,
               successColorShade
             ],
-            data: [19, 17.5, 15, 13.5, 11, 9],
-            borderWidth: 0
+            data: [19, 17, 15, 13, 11, 9],
+            borderWidth: 1
           }
         ]
       }

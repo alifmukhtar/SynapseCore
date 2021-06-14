@@ -249,13 +249,7 @@ $(function () {
       },
       // Buttons with Dropdown
       buttons: [
-        {
-          text: 'Add Record',
-          className: 'btn btn-primary btn-add-record ml-2',
-          action: function (e, dt, button, config) {
-            window.location = invoiceAdd;
-          }
-        }
+       
       ],
       // For responsive popup
       responsive: {

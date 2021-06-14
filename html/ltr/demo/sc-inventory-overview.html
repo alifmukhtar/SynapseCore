@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Synapse Core - Leave</title>
+    <title>Synapse Core - Inventory</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -204,12 +204,13 @@
                     </li>
                     <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Human Resource</span><i data-feather="more-horizontal"></i>
                     </li>
-                    
+
+                                        
                     <li class=" nav-item"><a class="d-flex align-items-center" href="../../../html/ltr/demo/sc-attendance.html"><i data-feather='check-square'></i><span class="menu-title text-truncate" data-i18n="Email">Attendance</span></a>
                     </li>
                     <li class=" nav-item"><a class="d-flex align-items-center" href="../../../html/ltr/demo/sc-employee-1.html"><i data-feather='user'></i><span class="menu-title text-truncate" data-i18n="Chat">Employee</span></a>
                     </li>
-                    <li class=" active"><a class="d-flex align-items-center" href="../../../html/ltr/demo/sc-leave.html"><i data-feather='user-x'></i></i><span class="menu-title text-truncate" data-i18n="Todo">Leave</span></a>
+                    <li class=" nav-item"><a class="d-flex align-items-center" href="../../../html/ltr/demo/sc-leave.html"><i data-feather='user-x'></i></i><span class="menu-title text-truncate" data-i18n="Todo">Leave</span></a>
                     </li>
                      <li class=" nav-item"><a class="d-flex align-items-center" href="../../../html/ltr/demo/sc-payroll-1.html"><i data-feather='credit-card'></i><span class="menu-title text-truncate" data-i18n="Email">Payroll</span></a>
                     </li>
@@ -217,6 +218,9 @@
                     
     
                    <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Inventory</span><i data-feather="more-horizontal"></i>
+                    </li>
+
+                    <li class=" active"><a class="d-flex align-items-center" href="../../../html/ltr/demo/sc-hr-overview.html"><i data-feather='search'></i><span class="menu-title text-truncate" data-i18n="Email">Overview</span></a>
                     </li>
                     
                     <li class=" nav-item"><a class="d-flex align-items-center" href="../../../html/ltr/demo/sc-stocks.html"><i data-feather='package'></i><span class="menu-title text-truncate" data-i18n="Email">Stocks</span></a>
@@ -274,223 +278,226 @@
             <div class="content-header row">
             </div>
             <div class="content-body">
-                <!-- Full calendar start -->
-                <section>
-                    <div class="app-calendar overflow-hidden border">
-                        <div class="row no-gutters">
-                            <!-- Sidebar -->
-                            <div class="col app-calendar-sidebar flex-grow-0 overflow-hidden d-flex flex-column" id="app-calendar-sidebar">
-                                <div class="sidebar-wrapper">
-                                    <div class="card-body d-flex justify-content-center">
-                                        <button class="btn btn-primary btn-toggle-sidebar btn-block" data-toggle="modal" data-target="#add-new-sidebar">
-                                            <span class="align-middle">Apply Leave</span>
-                                        </button>
-                                    </div>
-                                    <div class="card-body pb-0">
-                                        <div class="form-group">
-                                            <h5 class="section-label mb-1">
-                                                <span class="align-middle">Department</span>
-                                            </h5>
-                                            <select class="form-control mb-1" id="selectDefault">
-                                                <option selected>Human Resource</option>
-                                                <option value="1">IT</option>
-                                                <option value="2">Project </option>
-                                                <option value="3">Operation</option>
-                                            </select>
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <h5 class="section-label mb-1">
-                                                <span class="align-middle">Employee</span>
-                                            </h5>
-
-                                            <div class="employee-task d-flex justify-content-between align-items-center mb-2">
-                                            <div class="media">
-                                                <div class="avatar mr-75">
-                                                    <img src="../../../app-assets/images/portrait/small/avatar-s-20.jpg" class="rounded" width="42" height="42" alt="Avatar" />
-                                                </div>
-                                                 <div class="media-body my-auto">
-                                                     <h6 class="mb-0">Louisa Norton</h6>
-                                                    <small>UI Designer</small>
-                                                </div>
-                                            </div>
-                                            </div>
-
-                                            <div class="employee-task d-flex justify-content-between align-items-center mb-2">
-                                                <div class="media">
-                                                    <div class="avatar mr-75">
-                                                        <img src="../../../app-assets/images/portrait/small/avatar-s-21.jpg" class="rounded" width="42" height="42" alt="Avatar" />
-                                                    </div>
-                                                    <div class="media-body my-auto">
-                                                        <h6 class="mb-0">Cynthia Howell</h6>
-                                                        <small>Anguler Developer</small>
-                                                    </div>
-                                                </div>
-                                               
-                                            </div>
 
 
 
-
-                                            <div class="employee-task d-flex justify-content-between align-items-center">
-                                                <div class="media">
-                                                    <div class="avatar mr-75">
-                                                        <img src="../../../app-assets/images/portrait/small/avatar-s-16.jpg" class="rounded" width="42" height="42" alt="Avatar" />
-                                                    </div>
-                                                    <div class="media-body my-auto">
-                                                        <h6 class="mb-0">Helena Payne</h6>
-                                                        <small>Marketing</small>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                        </div>
-
-                                      
-
-
-                                      
-                                            
-
-                                   
-
-                                        <h5 class="section-label mb-1">
-                                            <span class="align-middle">Filter</span>
-                                        </h5>
-                                        <div class="custom-control custom-checkbox mb-1">
-                                            <input type="checkbox" class="custom-control-input select-all" id="select-all" checked />
-                                            <label class="custom-control-label" for="select-all">View All</label>
-                                        </div>
-                                        <div class="calendar-events-filter">
-                                            <div class="custom-control custom-control-danger custom-checkbox mb-1">
-                                                <input type="checkbox" class="custom-control-input input-filter" id="personal" data-value="personal" checked />
-                                                <label class="custom-control-label" for="personal">Paid Leave</label>
-                                            </div>
-                                            <div class="custom-control custom-control-primary custom-checkbox mb-1">
-                                                <input type="checkbox" class="custom-control-input input-filter" id="business" data-value="business" checked />
-                                                <label class="custom-control-label" for="business">Annual Leave</label>
-                                            </div>
-                                            <div class="custom-control custom-control-warning custom-checkbox mb-1">
-                                                <input type="checkbox" class="custom-control-input input-filter" id="family" data-value="family" checked />
-                                                <label class="custom-control-label" for="family">Unpaid Leave</label>
-                                            </div>
-                                            <div class="custom-control custom-control-success custom-checkbox mb-1">
-                                                <input type="checkbox" class="custom-control-input input-filter" id="holiday" data-value="holiday" checked />
-                                                <label class="custom-control-label" for="holiday">Emergency Leave</label>
-                                            </div>
-                                            <div class="custom-control custom-control-info custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input input-filter" id="etc" data-value="etc" checked />
-                                                <label class="custom-control-label" for="etc">National Holiday</label>
-                                            </div>
-                                        </div>
+                 <!-- Stats Vertical Card -->
+                 <div class="row">
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="avatar bg-light-info p-50 mb-1">
+                                    <div class="avatar-content">
+                                        <i data-feather="eye" class="font-medium-5"></i>
                                     </div>
                                 </div>
-                               
-                            </div>
-                            <!-- /Sidebar -->
-
-                            <!-- Calendar -->
-                            <div class="col position-relative">
-                                <div class="card shadow-none border-0 mb-0 rounded-0">
-                                    <div class="card-body pb-0">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Calendar -->
-                            <div class="body-content-overlay"></div>
-                        </div>
-                    </div>
-                    <!-- Calendar Add/Update/Delete event modal-->
-                    <div class="modal modal-slide-in event-sidebar fade" id="add-new-sidebar">
-                        <div class="modal-dialog sidebar-lg">
-                            <div class="modal-content p-0">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
-                                <div class="modal-header mb-1">
-                                    <h5 class="modal-title">Apply Leave</h5>
-                                </div>
-                                <div class="modal-body flex-grow-1 pb-sm-0 pb-3">
-                                    <form class="event-form needs-validation" data-ajax="false" novalidate>
-                                        <label class="form-label">Justification</label>
-                                            <textarea name="event-description-editor" id="event-description-editor" class="form-control"></textarea>
-                                        <div class="form-group">
-                                            <label for="select-label" class="form-label">Type of Leave</label>
-                                            <select class="select2 select-label form-control w-100" id="select-label" name="select-label">
-                                                <option data-label="primary" value="Business" selected>Paid Leave</option>
-                                                <option data-label="danger" value="Personal">Annual Leave</option>
-                                                <option data-label="warning" value="Family">Emergency Leave</option>
-                                                <option data-label="success" value="Holiday">Paid Leave</option>
-                                                <option data-label="info" value="ETC">ETC</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group position-relative">
-                                            <label for="start-date" class="form-label">Start Date</label>
-                                            <input type="text" class="form-control" id="start-date" name="start-date" placeholder="Start Date" />
-                                        </div>
-                                        <div class="form-group position-relative">
-                                            <label for="end-date" class="form-label">End Date</label>
-                                            <input type="text" class="form-control" id="end-date" name="end-date" placeholder="End Date" />
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input allDay-switch" id="customSwitch3" />
-                                                <label class="custom-control-label" for="customSwitch3">All Day</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="event-url" class="form-label">Event URL</label>
-                                            <input type="url" class="form-control" id="event-url" placeholder="https://www.google.com" />
-                                        </div>
-                                        <div class="form-group select2-primary">
-                                            <label for="event-guests" class="form-label">Add Guests</label>
-                                            <select class="select2 select-add-guests form-control w-100" id="event-guests" multiple>
-                                                <option data-avatar="1-small.png" value="Jane Foster">Jane Foster</option>
-                                                <option data-avatar="3-small.png" value="Donna Frank">Donna Frank</option>
-                                                <option data-avatar="5-small.png" value="Gabrielle Robertson">Gabrielle Robertson</option>
-                                                <option data-avatar="7-small.png" value="Lori Spears">Lori Spears</option>
-                                                <option data-avatar="9-small.png" value="Sandy Vega">Sandy Vega</option>
-                                                <option data-avatar="11-small.png" value="Cheryl May">Cheryl May</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="event-location" class="form-label">Location</label>
-                                            <input type="text" class="form-control" id="event-location" placeholder="Enter Location" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label">Description</label>
-                                            <textarea name="event-description-editor" id="event-description-editor" class="form-control"></textarea>
-                                        </div>
-                                        <div class="form-group d-flex">
-                                            <button type="submit" class="btn btn-primary add-event-btn mr-1">Apply</button>
-                                            <button type="button" class="btn btn-outline-secondary btn-cancel" data-dismiss="modal">Cancel</button>
-                                            <button type="submit" class="btn btn-primary update-event-btn d-none mr-1">Update</button>
-                                            <button class="btn btn-outline-danger btn-delete-event d-none">Delete</button>
-                                        </div>
-                                    </form>
-                                </div>
+                                <h2 class="font-weight-bolder">36.9k</h2>
+                                <p class="card-text">Sales</p>
                             </div>
                         </div>
                     </div>
-                    <!--/ Calendar Add/Update/Delete event modal-->
-                </section>
-                <!-- Full calendar end -->
+               
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="avatar bg-light-danger p-50 mb-1">
+                                    <div class="avatar-content">
+                                        <i data-feather="shopping-bag" class="font-medium-5"></i>
+                                    </div>
+                                </div>
+                                <h2 class="font-weight-bolder">97.8k</h2>
+                                <p class="card-text">Orders</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="avatar bg-light-warning p-50 mb-1">
+                                    <div class="avatar-content">
+                                        <i data-feather="message-square" class="font-medium-5"></i>
+                                    </div>
+                                </div>
+                                <h2 class="font-weight-bolder">12k</h2>
+                                <p class="card-text">Inventories</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="avatar bg-light-primary p-50 mb-1">
+                                    <div class="avatar-content">
+                                        <i data-feather="heart" class="font-medium-5"></i>
+                                    </div>
+                                </div>
+                                <h2 class="font-weight-bolder">268</h2>
+                                <p class="card-text">Invoices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="avatar bg-light-success p-50 mb-1">
+                                    <div class="avatar-content">
+                                        <i data-feather="award" class="font-medium-5"></i>
+                                    </div>
+                                </div>
+                                <h2 class="font-weight-bolder">689</h2>
+                                <p class="card-text">Quotations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="avatar bg-light-danger p-50 mb-1">
+                                    <div class="avatar-content">
+                                        <i data-feather="truck" class="font-medium-5"></i>
+                                    </div>
+                                </div>
+                                <h2 class="font-weight-bolder">2.1k</h2>
+                                <p class="card-text">Returns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Stats Vertical Card -->
+
+                <div class="row match-height">
+                    <!-- Revenue Card -->
+                    <div class="col-lg-8 col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h4 class="card-title">Revenue</h4>
+                                <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-start mb-3">
+                                    <div class="mr-2">
+                                        <p class="card-text mb-50">This Month</p>
+                                        <h3 class="font-weight-bolder">
+                                            <sup class="font-medium-1 font-weight-bold">$</sup>
+                                            <span class="text-primary">86,589</span>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <p class="card-text mb-50">Last Month</p>
+                                        <h3 class="font-weight-bolder">
+                                            <sup class="font-medium-1 font-weight-bold">$</sup>
+                                            <span>73,683</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="revenue-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Revenue Card -->
+
+                    <!-- Sales Polygon Chart Card -->
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-start pb-1">
+                                <div>
+                                    <h4 class="card-title mb-25">Sales</h4>
+                                    <p class="card-text">Last 6 months</p>
+                                </div>
+                                <i data-feather="more-vertical" class="font-medium-3 cursor-pointer"></i>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-inline-block mr-1">
+                                    <div class="d-flex align-items-center">
+                                        <i data-feather="circle" class="font-small-3 text-primary mr-50"></i>
+                                        <h6 class="mb-0">Sales</h6>
+                                    </div>
+                                </div>
+                                <div class="d-inline-block">
+                                    <div class="d-flex align-items-center">
+                                        <i data-feather="circle" class="font-small-3 text-info mr-50"></i>
+                                        <h6 class="mb-0">Visits</h6>
+                                    </div>
+                                </div>
+                                <div id="sales-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Sales Polygon Chart Card -->
+                </div>
+
+            
+
+        
+        <!---End of 2nd Row-->
+
+
+        <div class="row match-height">
+        <!-- Column Chart Starts -->
+         <!-- Sales Line Chart Card -->
+         <div class="col-6">
+            <div class="card">
+                <div class="card-header align-items-start">
+                    <div>
+                        <h4 class="card-title mb-25">Sales</h4>
+                        <p class="card-text mb-0">2020 Total Sales: 12.84k</p>
+                    </div>
+                    <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
+                </div>
+                <div class="card-body pb-0">
+                    <div id="sales-line-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!--/ Sales Line Chart Card -->
+        <!-- Column Chart Ends -->
+
+         <!-- RadialBar Chart Starts -->
+         <div class="col-xl-6 col-12">
+            <div class="card">
+                <div class="card-header d-flex flex-sm-row flex-column justify-content-md-between align-items-start justify-content-start">
+                    <h4 class="card-title mb-sm-0 mb-1">Statistics</h4>
+                </div>
+                <div class="card-body">
+                    <div id="radialbar-chart"></div>
+                </div>
+            </div>
+        </div>
+        <!-- RadialBar Chart Ends -->
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
 
             </div>
         </div>
@@ -528,6 +535,62 @@
     <script src="../../../app-assets/js/scripts/pages/app-calendar.js"></script>
     <!-- END: Page JS-->
 
+       <!-- BEGIN: Page Vendor JS-->
+       <script src="../../../app-assets/vendors/js/charts/chart.min.js"></script>
+       <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+       <!-- END: Page Vendor JS-->
+   
+       <!-- BEGIN: Theme JS-->
+       <script src="../../../app-assets/js/core/app-menu.js"></script>
+       <script src="../../../app-assets/js/core/app.js"></script>
+       <!-- END: Theme JS-->
+   
+       <!-- BEGIN: Page JS-->
+       <script src="../../../app-assets/js/scripts/charts/chart-chartjs.js"></script>
+       <!-- END: Page JS-->
+
+         <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/charts/chart-apex.js"></script>
+    <!-- END: Page JS-->
+
+        <!-- BEGIN: Page Vendor JS-->
+        <script src="../../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+        <!-- END: Page Vendor JS-->
+    
+        <!-- BEGIN: Theme JS-->
+        <script src="../../../app-assets/js/core/app-menu.js"></script>
+        <script src="../../../app-assets/js/core/app.js"></script>
+        <!-- END: Theme JS-->
+    
+        <!-- BEGIN: Page JS-->
+        <script src="../../../app-assets/js/scripts/cards/card-analytics.js"></script>
+        <!-- END: Page JS-->
+
+
+           <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/cards/card-statistics.js"></script>
+    <!-- END: Page JS-->
+    
+
     <script>
         $(window).on('load', function() {
             if (feather) {
@@ -538,6 +601,86 @@
             }
         })
     </script>
+
+
+
+<script type="text/javascript">
+
+
+    // Column Chart
+  // --------------------------------------------------------------------
+  var columnChartEl = document.querySelector('#column-chart'),
+    columnChartConfig = {
+      chart: {
+        height: 400,
+        type: 'bar',
+        stacked: true,
+        parentHeightOffset: 0,
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '15%',
+          colors: {
+            backgroundBarColors: [
+              chartColors.column.bg,
+              chartColors.column.bg,
+              chartColors.column.bg,
+              chartColors.column.bg,
+              chartColors.column.bg
+            ],
+            backgroundBarRadius: 10
+          }
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      legend: {
+        show: true,
+        position: 'top',
+        horizontalAlign: 'start'
+      },
+      colors: [chartColors.column.series1, chartColors.column.series2],
+      stroke: {
+        show: true,
+        colors: ['transparent']
+      },
+      grid: {
+        xaxis: {
+          lines: {
+            show: true
+          }
+        }
+      },
+      series: [
+        {
+          name: 'Attend',
+          data: [90, 120, 55, 100, 80, 125, 175, 70, 88, 180]
+        },
+        {
+          name: 'Absence',
+          data: [85, 100, 30, 40, 95, 90, 30, 110, 62, 20]
+        }
+      ],
+      xaxis: {
+        categories: ['7/12', '8/12', '9/12', '10/12', '11/12', '12/12', '13/12', '14/12', '15/12', '16/12']
+      },
+      fill: {
+        opacity: 1
+      },
+      yaxis: {
+        opposite: isRtl
+      }
+    };
+  if (typeof columnChartEl !== undefined && columnChartEl !== null) {
+    var columnChart = new ApexCharts(columnChartEl, columnChartConfig);
+    columnChart.render();
+  }
+
+</script>
 </body>
 <!-- END: Body-->
 
